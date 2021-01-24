@@ -23,5 +23,42 @@ Getting started with the ESP32 based Custom Dev Board
 * Arduino TX --> TXD of CDB      
 * Arduino RESET --> Arduino GND       
 * GND --> D0 of CDB
+  
+Continue by following this [link](https://technoreview85.com/how-to-program-esp-32-cam-using-arduino-uno-board/)       
 
-Continue by following this [link](https://technoreview85.com/how-to-program-esp-32-cam-using-arduino-uno-board/)  
+#### Code for RGB-LED on Custom Dev Board 
+```
+int red = D6;
+int green = D7;
+int blue = D8;
+ 
+// the setup routine runs once when you press reset:
+void setup()
+{
+// initialize the digital pin as an output.
+pinMode(red, OUTPUT);
+pinMode(green, OUTPUT);
+pinMode(blue, OUTPUT);
+digitalWrite(red, HIGH);
+digitalWrite(green, HIGH);
+digitalWrite(blue, HIGH);
+}
+ 
+// the loop routine runs over and over again forever:
+void loop() {
+digitalWrite(red, LOW); // turn the LED on 
+delay(1000); // wait for a second
+digitalWrite(red, HIGH); // turn the LED off by making the voltage LOW
+delay(1000); // wait for a second
+digitalWrite(green, LOW); // turn the LED on 
+delay(1000); // wait for a second
+digitalWrite(green, HIGH); // turn the LED off by making the voltage LOW
+delay(1000); // wait for a second
+digitalWrite(blue, LOW); // turn the LED on
+delay(1000); // wait for a second
+digitalWrite(blue, HIGH); // turn the LED off by making the voltage LOW
+delay(1000); // wait for a second
+}
+
+```    
+
