@@ -28,9 +28,9 @@ Continue by following this [link](https://technoreview85.com/how-to-program-esp-
 
 #### Code for RGB-LED on Custom Dev Board 
 ```
-int red = D6;
-int green = D7;
-int blue = D8;
+int red = D4;
+int green = D16;
+int blue = D17;
  
 // the setup routine runs once when you press reset:
 void setup()
