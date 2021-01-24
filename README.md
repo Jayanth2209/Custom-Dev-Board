@@ -11,4 +11,8 @@ Getting started with the ESP32 based Custom Dev Board
 * TXD of CBD --> RXD of USB-UART
 * RXD of CDB --> TXD of USB-UART
 
+##### References:
+[ESP32 with FTDI Programmer](https://electronics.stackexchange.com/questions/448187/esp32-with-ftdi-programmer)       
+[ESP Flasher Test Procedure](https://github.com/SuperHouse/ESPF/blob/main/Tests/Test-Procedure.md)
+
 
