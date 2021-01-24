@@ -15,4 +15,13 @@ Getting started with the ESP32 based Custom Dev Board
 [ESP32 with FTDI Programmer](https://electronics.stackexchange.com/questions/448187/esp32-with-ftdi-programmer)       
 [ESP Flasher Test Procedure](https://github.com/SuperHouse/ESPF/blob/main/Tests/Test-Procedure.md)
 
+### Programming ESP32 using an Arduino UNO
+#### Connections:
+* Arduino 5V --> VIN of CDB       
+* Arduino GND --> GND of CDB       
+* Arduino RX --> RXD of CDB      
+* Arduino TX --> TXD of CDB      
+* Arduino RESET --> Arduino GND       
+* GND --> D0 of CDB
 
+Continue by following this [link](https://technoreview85.com/how-to-program-esp-32-cam-using-arduino-uno-board/)  
