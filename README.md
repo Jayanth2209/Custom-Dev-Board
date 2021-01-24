@@ -5,4 +5,10 @@ Getting started with the ESP32 based Custom Dev Board
 
 
 ### Interfacing Custom Dev Board with External CP2102 USB to TTL UART Serial Converter    
-#### Connections:     
+#### Connections:        
+* VIN of CBD --> External +5V Supply
+* GND of CBD --> GND of USB-UART
+* TXD of CBD --> RXD of USB-UART
+* RXD of CDB --> TXD of USB-UART
+
+
