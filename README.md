@@ -60,5 +60,8 @@ digitalWrite(blue, HIGH); // turn the LED off by making the voltage LOW
 delay(1000); // wait for a second
 }
 
-```    
+```         
 
+
+### MPU6050 
+[Code for IMU](https://circuitdigest.com/microcontroller-projects/mpu6050-gyro-sensor-interfacing-with-esp32-nodemcu-board)
