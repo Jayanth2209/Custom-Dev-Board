@@ -6,10 +6,13 @@ Getting started with the ESP32 based Custom Dev Board
 
 ### Interfacing Custom Dev Board with External CP2102 USB to TTL UART Serial Converter    
 #### Connections:        
-* VIN of CBD --> External +5V Supply
-* GND of CBD --> GND of USB-UART
-* TXD of CBD --> RXD of USB-UART
-* RXD of CDB --> TXD of USB-UART
+* VIN of CDB --> External +5V Supply
+* GND of CDB --> GND of USB-UART
+* TXD of CDB --> RXD of USB-UART
+* RXD of CDB --> TXD of USB-UART      
+###### Check:
+* EN of CDB --> DTR of USB-UART
+* D0 of CDB --> RTS of USB-UART
 
 ##### References:
 [ESP32 with FTDI Programmer](https://electronics.stackexchange.com/questions/448187/esp32-with-ftdi-programmer)       
@@ -166,4 +169,11 @@ void mpu_read(){
  }     
  
  ```     
-* [Reference](https://circuitdigest.com/microcontroller-projects/mpu6050-gyro-sensor-interfacing-with-esp32-nodemcu-board)
+* [Reference](https://circuitdigest.com/microcontroller-projects/mpu6050-gyro-sensor-interfacing-with-esp32-nodemcu-board)      
+
+#### On Arduino IDE:
+* Open Arduino IDE on your PC --> File --> Preferences -->     
+* Paste this in Board Manager URL "https://dl.espressif.com/dl/package_esp32_index.json"        
+* Now, Tools --> Board --> Board manager > Search for ESP32         
+* Download & install the latest version package            
+* Select board to "ESP32 Dev Module" for the CDB in the Board option
