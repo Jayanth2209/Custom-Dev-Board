@@ -30,6 +30,9 @@ Getting started with the ESP32 based Custom Dev Board
 Continue by following this [link](https://technoreview85.com/how-to-program-esp-32-cam-using-arduino-uno-board/)       
 
 #### Code for RGB-LED on Custom Dev Board 
+* R --> Pin 4             
+* G --> Pin 16             
+* B --> Pin 17
 ```
 int red = D4;
 int green = D16;
@@ -66,11 +69,13 @@ delay(1000); // wait for a second
 ```         
 
 
-### MPU6050      
+### MPU6050 
+* SDA of CDB --> Pin 21 of CDB           
+* SCL of CDB --> Pin 22 of CDB
 ```       
 #include <Wire.h>
 #include <WiFi.h>
-const int MPU_addr=0x68;  // I2C address of the MPU-6050
+const int MPU_addr=0x69;  // I2C address of the MPU-6050
 int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ;
 // WiFi network info.
 const char *ssid =  "Galaxy-M20";     // Enter your WiFi Name
