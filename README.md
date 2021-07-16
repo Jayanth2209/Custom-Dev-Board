@@ -2,6 +2,7 @@
 Getting started with the ESP32 based Custom Dev Board     
 
 ![Custom Development Board - Based on ESP32 WROOM ](CDB.jpeg)
+![Board Layout](Board_Layout.png)
 
 
 ### Interfacing Custom Dev Board with External CP2102 USB to TTL UART Serial Converter    
