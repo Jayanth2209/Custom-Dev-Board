@@ -183,3 +183,7 @@ void mpu_read(){
 * Now, Tools --> Board --> Board manager > Search for ESP32         
 * Download & install the latest version package            
 * Select board to "ESP32 Dev Module" for the CDB in the Board option
+
+## Designed by
+- J Phani Jayanth 
+- Sharanesh R
